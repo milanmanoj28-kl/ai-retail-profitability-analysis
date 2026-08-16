@@ -1,0 +1,410 @@
+{
+  "risk_distribution": {
+    "by_category": [
+      {
+        "Category": "Furniture",
+        "transactions": 2118,
+        "avg_risk_score": 33.26,
+        "median_risk_score": 24.44,
+        "high_risk_count": 473,
+        "high_risk_pct": 22.33
+      },
+      {
+        "Category": "Technology",
+        "transactions": 1847,
+        "avg_risk_score": 24.1,
+        "median_risk_score": 18.89,
+        "high_risk_count": 159,
+        "high_risk_pct": 8.61
+      },
+      {
+        "Category": "Office Supplies",
+        "transactions": 6012,
+        "avg_risk_score": 22.38,
+        "median_risk_score": 13.33,
+        "high_risk_count": 705,
+        "high_risk_pct": 11.73
+      }
+    ],
+    "by_subcategory": [
+      {
+        "Sub-Category": "Tables",
+        "transactions": 319,
+        "avg_risk_score": 53.07,
+        "median_risk_score": 62.22,
+        "high_risk_count": 168,
+        "high_risk_pct": 52.66
+      },
+      {
+        "Sub-Category": "Machines",
+        "transactions": 115,
+        "avg_risk_score": 43.22,
+        "median_risk_score": 31.11,
+        "high_risk_count": 43,
+        "high_risk_pct": 37.39
+      },
+      {
+        "Sub-Category": "Binders",
+        "transactions": 1522,
+        "avg_risk_score": 42.35,
+        "median_risk_score": 18.89,
+        "high_risk_count": 612,
+        "high_risk_pct": 40.21
+      },
+      {
+        "Sub-Category": "Bookcases",
+        "transactions": 228,
+        "avg_risk_score": 42.2,
+        "median_risk_score": 40.03,
+        "high_risk_count": 67,
+        "high_risk_pct": 29.39
+      },
+      {
+        "Sub-Category": "Chairs",
+        "transactions": 615,
+        "avg_risk_score": 35.28,
+        "median_risk_score": 32.78,
+        "high_risk_count": 99,
+        "high_risk_pct": 16.1
+      },
+      {
+        "Sub-Category": "Phones",
+        "transactions": 889,
+        "avg_risk_score": 28.06,
+        "median_risk_score": 27.11,
+        "high_risk_count": 105,
+        "high_risk_pct": 11.81
+      },
+      {
+        "Sub-Category": "Storage",
+        "transactions": 846,
+        "avg_risk_score": 25.38,
+        "median_risk_score": 26.22,
+        "high_risk_count": 18,
+        "high_risk_pct": 2.13
+      },
+      {
+        "Sub-Category": "Furnishings",
+        "transactions": 956,
+        "avg_risk_score": 23.21,
+        "median_risk_score": 12.22,
+        "high_risk_count": 139,
+        "high_risk_pct": 14.54
+      },
+      {
+        "Sub-Category": "Supplies",
+        "transactions": 190,
+        "avg_risk_score": 23.1,
+        "median_risk_score": 23.12,
+        "high_risk_count": 4,
+        "high_risk_pct": 2.11
+      },
+      {
+        "Sub-Category": "Appliances",
+        "transactions": 466,
+        "avg_risk_score": 22.76,
+        "median_risk_score": 8.89,
+        "high_risk_count": 67,
+        "high_risk_pct": 14.38
+      },
+      {
+        "Sub-Category": "Accessories",
+        "transactions": 775,
+        "avg_risk_score": 17.36,
+        "median_risk_score": 13.33,
+        "high_risk_count": 11,
+        "high_risk_pct": 1.42
+      },
+      {
+        "Sub-Category": "Copiers",
+        "transactions": 68,
+        "avg_risk_score": 16.89,
+        "median_risk_score": 14.16,
+        "high_risk_count": 0,
+        "high_risk_pct": 0.0
+      },
+      {
+        "Sub-Category": "Fasteners",
+        "transactions": 217,
+        "avg_risk_score": 16.47,
+        "median_risk_score": 13.33,
+        "high_risk_count": 4,
+        "high_risk_pct": 1.84
+      },
+      {
+        "Sub-Category": "Art",
+        "transactions": 795,
+        "avg_risk_score": 13.39,
+        "median_risk_score": 8.89,
+        "high_risk_count": 0,
+        "high_risk_pct": 0.0
+      },
+      {
+        "Sub-Category": "Paper",
+        "transactions": 1359,
+        "avg_risk_score": 9.88,
+        "median_risk_score": 8.89,
+        "high_risk_count": 0,
+        "high_risk_pct": 0.0
+      },
+      {
+        "Sub-Category": "Envelopes",
+        "transactions": 254,
+        "avg_risk_score": 9.72,
+        "median_risk_score": 10.0,
+        "high_risk_count": 0,
+        "high_risk_pct": 0.0
+      },
+      {
+        "Sub-Category": "Labels",
+        "transactions": 363,
+        "avg_risk_score": 9.71,
+        "median_risk_score": 8.89,
+        "high_risk_count": 0,
+        "high_risk_pct": 0.0
+      }
+    ]
+  },
+  "profit_leakage": {
+    "by_region": [
+      {
+        "Region": "Central",
+        "transactions": 2319,
+        "total_sales": 500782.85,
+        "total_profit": 39655.88,
+        "profit_leakage": 56308.65,
+        "leakage_transactions": 740,
+        "avg_risk_score": 34.29
+      },
+      {
+        "Region": "East",
+        "transactions": 2845,
+        "total_sales": 678435.2,
+        "total_profit": 91506.31,
+        "profit_leakage": 49578.55,
+        "leakage_transactions": 552,
+        "avg_risk_score": 24.24
+      },
+      {
+        "Region": "South",
+        "transactions": 1620,
+        "total_sales": 391721.9,
+        "total_profit": 46749.43,
+        "profit_leakage": 27504.83,
+        "leakage_transactions": 259,
+        "avg_risk_score": 23.81
+      },
+      {
+        "Region": "West",
+        "transactions": 3193,
+        "total_sales": 725255.64,
+        "total_profit": 108329.81,
+        "profit_leakage": 22720.96,
+        "leakage_transactions": 318,
+        "avg_risk_score": 19.56
+      }
+    ],
+    "by_segment": [
+      {
+        "Segment": "Consumer",
+        "transactions": 5183,
+        "total_sales": 1160832.77,
+        "total_profit": 134007.44,
+        "profit_leakage": 84945.71,
+        "leakage_transactions": 1003,
+        "avg_risk_score": 25.33
+      },
+      {
+        "Segment": "Corporate",
+        "transactions": 3015,
+        "total_sales": 706070.13,
+        "total_profit": 91954.98,
+        "profit_leakage": 44780.97,
+        "leakage_transactions": 555,
+        "avg_risk_score": 25.19
+      },
+      {
+        "Segment": "Home Office",
+        "transactions": 1779,
+        "total_sales": 429292.68,
+        "total_profit": 60279.0,
+        "profit_leakage": 26386.31,
+        "leakage_transactions": 311,
+        "avg_risk_score": 23.75
+      }
+    ],
+    "by_category": [
+      {
+        "index": 0,
+        "Category": "Furniture",
+        "transactions": 2118,
+        "total_sales": 741306.25,
+        "total_profit": 18421.64,
+        "profit_leakage": 60924.24,
+        "avg_risk_score": 33.26
+      },
+      {
+        "index": 1,
+        "Category": "Office Supplies",
+        "transactions": 6012,
+        "total_sales": 718735.12,
+        "total_profit": 122363.87,
+        "profit_leakage": 56609.11,
+        "avg_risk_score": 22.38
+      },
+      {
+        "index": 2,
+        "Category": "Technology",
+        "transactions": 1847,
+        "total_sales": 836154.02,
+        "total_profit": 145455.44,
+        "profit_leakage": 38579.99,
+        "avg_risk_score": 24.1
+      }
+    ]
+  },
+  "discount_profit_relationship": {
+    "overall_correlation_discount_vs_profit_margin": -0.8644,
+    "interpretation": "Negative = higher discount tends to be associated with lower profit margin; positive = higher discount tends to be associated with higher profit margin.",
+    "discount_bands": [
+      {
+        "Discount Band": "0-10%",
+        "transactions": 4881,
+        "avg_discount": 0.19,
+        "avg_profit_margin": 33.65,
+        "avg_profit": 67.5832,
+        "avg_risk_score": 8.2788
+      },
+      {
+        "Discount Band": "10-20%",
+        "transactions": 3705,
+        "avg_discount": 19.93,
+        "avg_profit_margin": 17.47,
+        "avg_profit": 24.7572,
+        "avg_risk_score": 26.4863
+      },
+      {
+        "Discount Band": "20-30%",
+        "transactions": 226,
+        "avg_discount": 30.0,
+        "avg_profit_margin": -11.58,
+        "avg_profit": -45.8284,
+        "avg_risk_score": 61.3465
+      },
+      {
+        "Discount Band": "30-40%",
+        "transactions": 233,
+        "avg_discount": 39.07,
+        "avg_profit_margin": -21.69,
+        "avg_profit": -109.2197,
+        "avg_risk_score": 71.5758
+      },
+      {
+        "Discount Band": "40-50%",
+        "transactions": 77,
+        "avg_discount": 49.29,
+        "avg_profit_margin": -53.56,
+        "avg_profit": -298.6953,
+        "avg_risk_score": 84.6583
+      },
+      {
+        "Discount Band": "50%+",
+        "transactions": 855,
+        "avg_discount": 71.88,
+        "avg_profit_margin": -113.81,
+        "avg_profit": -89.5355,
+        "avg_risk_score": 86.4343
+      }
+    ]
+  },
+  "top_5_highest_risk_categories": [
+    {
+      "Category": "Furniture",
+      "transactions": 2118,
+      "avg_risk_score": 33.26,
+      "high_risk_pct": 22.33,
+      "avg_discount": 17.0,
+      "avg_profit_margin": 4.0,
+      "total_sales": 741306.31,
+      "total_profit": 18421.81,
+      "profit_leakage": 60924.05
+    },
+    {
+      "Category": "Technology",
+      "transactions": 1847,
+      "avg_risk_score": 24.1,
+      "high_risk_pct": 8.61,
+      "avg_discount": 13.0,
+      "avg_profit_margin": 16.0,
+      "total_sales": 836154.03,
+      "total_profit": 145454.95,
+      "profit_leakage": 38579.92
+    },
+    {
+      "Category": "Office Supplies",
+      "transactions": 6012,
+      "avg_risk_score": 22.38,
+      "high_risk_pct": 11.73,
+      "avg_discount": 16.0,
+      "avg_profit_margin": 14.0,
+      "total_sales": 718735.24,
+      "total_profit": 122364.66,
+      "profit_leakage": 56609.02
+    }
+  ],
+  "predictive_model": {
+    "metrics": {
+      "accuracy": 0.9815,
+      "precision": 0.9563,
+      "recall": 0.9026
+    },
+    "top_features": [
+      {
+        "feature": "numeric__Discount",
+        "importance": 0.5982
+      },
+      {
+        "feature": "categorical__Sub-Category_Binders",
+        "importance": 0.0673
+      },
+      {
+        "feature": "numeric__Sales",
+        "importance": 0.0626
+      },
+      {
+        "feature": "numeric__Quantity",
+        "importance": 0.0376
+      },
+      {
+        "feature": "categorical__Region_West",
+        "importance": 0.0286
+      },
+      {
+        "feature": "categorical__Sub-Category_Paper",
+        "importance": 0.0266
+      },
+      {
+        "feature": "categorical__Region_Central",
+        "importance": 0.0231
+      },
+      {
+        "feature": "categorical__Sub-Category_Tables",
+        "importance": 0.0197
+      },
+      {
+        "feature": "categorical__Category_Furniture",
+        "importance": 0.0133
+      },
+      {
+        "feature": "categorical__Category_Office Supplies",
+        "importance": 0.0121
+      }
+    ],
+    "test_prediction_distribution": {
+      "Not High Risk": 1744,
+      "High Risk": 252,
+      "total_predictions": 1996,
+      "high_risk_pct": 12.63
+    }
+  }
+}
