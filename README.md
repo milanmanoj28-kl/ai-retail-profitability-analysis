@@ -1,3 +1,69 @@
+# AI Retail Profitability Analysis
+
+An end-to-end retail intelligence pipeline that goes beyond dashboards and static reporting. This project combines transparent risk engineering, machine learning classification, and an LLM-powered reasoning layer to answer a question most retail analytics stops short of: not just *what happened*, but *where should the business act first*.
+
+Built on the Sample Superstore transaction dataset, the pipeline moves through five distinct stages — cleaning, risk scoring, predictive classification, aggregation, and AI-generated recommendations — culminating in a conversational interface where anyone on a business team can ask plain-English questions and get answers grounded strictly in real data.
+
+---
+
+## Why This Project Exists
+
+Most retail analytics projects stop at visualization: a dashboard that shows profit dropped in a category, without explaining why, without flagging risk before it materializes, and without translating findings into a prioritized action plan. This project was built to close that gap.
+
+The guiding question throughout was simple: **can an analytics pipeline not only diagnose profit leakage, but predict it, explain it in business language, and recommend what to do about it — all while remaining fully auditable and free of hallucinated numbers?**
+
+---
+
+## Core Business Questions Answered
+
+- Where is profit leakage concentrated across categories, regions, and segments?
+- How strongly is discounting associated with declining profit margins?
+- Can a machine learning model flag high-risk transactions before they fully play out?
+- Can an LLM convert dense tabular evidence into recommendations a manager could act on today?
+- Can users interrogate the analysis conversationally, without needing to write a single line of SQL or Python themselves?
+
+---
+
+## Pipeline Architecture
+
+Raw Transaction Data
+|
+Data Cleaning and Validation
+|
+Explainable Risk Score Engineering
+|
+Random Forest Risk Classification
+|
+Aggregated Business Summaries
+|
+Groq LLM Insight and Recommendation Generation
+|
+Streamlit Conversational Interface
+
+Every stage feeds the next, but each is also independently interpretable — the risk score can be explained without the model, the model can be explained without the LLM, and the LLM's output can always be traced back to a specific number in the underlying data.
+
+---
+
+## Stage 1: Data Cleaning
+
+The raw dataset (9,994 transactions across 13 columns) was inspected for structure, missing values, and duplication before any transformation was applied. Numeric columns were coerced to proper types, repeated categorical fields were converted to category dtype for efficiency, and 17 exact duplicate rows were removed, producing a clean base of 9,977 transactions. The cleaning process was deliberately conservative — inspect first, transform only what's necessary, and validate the result before moving forward.
+
+---
+
+## Stage 2: Explainable Risk Score
+
+Rather than relying on an opaque model to flag risk, this project engineers a fully transparent, rule-based Risk Score, built so that every number in it can be defended in a single sentence.
+
+The score combines three components:
+
+**Margin Risk (40 percent weight)** — measures how far a transaction's profit margin falls below a healthy 20 percent benchmark, scaling to maximum risk as margin approaches zero or turns negative.
+
+**Discount Risk (40 percent weight)** — measures how far a transaction's discount exceeds a 10 percent acceptable baseline, scaling to maximum risk at a 50 percent discount.
+
+**Quantity Risk (20 percent weight)** — treated as an exposure multiplier, since a risky transaction with a higher quantity carries greater financial consequence.
+
+Risk Score = 100 x (0.40 x Margin Risk + 0.40 x Discount Risk + 0.20 x Quantity Risk)
+
 Margin and discount are weighted equally and heavily because they are the most direct drivers of profitability. Quantity is weighted lower because it amplifies risk rather than causing it directly. Every threshold in the formula (10 percent, 50 percent, 20 percent) is a stated business assumption, not a statistically derived cutoff — and the project is explicit about that distinction rather than disguising it as discovered truth.
 
 Transactions are then bucketed into Low, Medium, and High risk levels for downstream classification and reporting.
