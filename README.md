@@ -154,3 +154,6 @@ GROQ_API_KEY=your_key_here
 Launch the interface:
 
 streamlit run app.py
+
+<img width="1426" height="681" alt="Screenshot 2026-08-16 at 6 46 32 PM" src="https://github.com/user-attachments/assets/120cf6d5-5387-44fc-8aa6-58aaffcbe96b" />
+
